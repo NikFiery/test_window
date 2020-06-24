@@ -1,0 +1,131 @@
+@media (max-width: 999px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .tabcontent {
+        width: 100%;
+    }
+}
+
+@media (max-width: 825px) {  /* tablets */
+
+    .swiper-container {
+        width: 100%
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .tab {
+        justify-content: space-around;
+    }
+
+    .container__tabcontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabcontent__top {
+        flex-direction: column;
+        justify-content: row;
+        align-items: center;
+        padding: 85px 0 59px;
+    }
+
+    .tabcontent__top--choice {
+        align-items: center;
+
+        h2 {
+            margin-top: 25px;
+        }
+    }
+
+    .tabcontene__categories {
+        align-items: center;
+    }
+
+    .tabcontene__sash {
+        width: 361px;
+        margin-top: 52px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header__container.container {
+       flex-direction: column; 
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .header__contacts {
+        margin: 25px 0 0 0;
+    }
+
+    .tabcontent__bottom {
+        flex-direction: column;
+        margin: 0px auto 50px;
+    }
+
+    .tabcontent__bottom .tabcontent__bottom--button {
+        margin: 27px 0 0 0;
+
+    }
+
+    .tabcontene__checkboxes {
+        flex-direction: column;
+    }
+
+    .request__form {
+        margin: 110px auto;
+    }
+
+    .tabcontene__sash select {
+        width: 70%;
+    }
+}
+
+@media (max-width: 466px) {     /*telephones*/
+
+    .request .container__request {
+        max-width: 100%;
+    }
+
+    .content p {
+        font-size: calc(18px + 0.5vw);
+    }
+
+    .tab {
+        flex-direction: column;
+    }
+
+    .tabcontene__sash {
+        width: 100%;
+    }
+
+    .request__form {
+        width: 100%;
+        margin: 0;
+        padding: 30px 20px 52px 20px;
+    }
+
+    .request__form input {
+        width: 262px;
+        margin-top: 15px;
+    }
+
+    .request__form button {
+        width: 265px;
+    }
+}

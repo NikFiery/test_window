@@ -1,0 +1,175 @@
+@import './scss-components/settings';
+@import './scss-components/variables';
+@import './scss-components/сalculator';
+
+.wrapper {
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background: #DCDCDC;
+}
+
+.header__container.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 65px 0
+}
+
+.header__logo {
+    /* add all img because such a task*/
+    width: 273px;
+    height: 100px;
+    margin-right: auto;
+    background: url(../../img/logo.png) center center no-repeat;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    @include title-text;
+    font-size: calc(14 + 1.2vw);
+
+    a {
+        color: #767676;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.request {
+    width: 100%;
+    background: url(../../img/bg.png) center center no-repeat;
+}
+
+.request__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 359px;
+    height: 276px;
+    margin: 110px 0 100px 123px;
+    padding: 30px 23px 52px 23px;
+    background: #9DA3D7;
+
+
+    h2 {
+        height: 50px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+    }
+
+    input {
+        width: 291px;
+        height: 50px;
+        border: none;
+        font-size: 24px;
+    }
+
+    input::placeholder {
+        padding: 17px 110px 11px 18px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #767676;
+    }
+
+    button {
+        width: 291px;
+        height: 50px;
+        background: #FFC087;
+        border: none;
+        font-size: 24px;
+        animation: btn-act 1.3s ease-in infinite;
+    }
+
+    button:hover {
+        background: #ff9d48;
+        border: none;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+
+    button:active {
+        background: #000;
+        color: #ff9d48;
+    }
+
+    @keyframes btn-act {
+
+        0% {
+            font-size: 24px;
+        }
+
+        25% {
+            font-size: 22px;
+        }
+
+        50% {
+            font-size: 20px;
+            border-radius: 5%/30%;
+        }
+
+        75% {
+            font-size: 22px;
+        }
+
+        100% {
+            font-size: 24px;
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-container {
+    width: 693px;
+    margin: 73 auto 0;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 4px -2px #000;
+}
+
+.swiper-slide {
+    width: 693px;
+    height: 288px;
+    margin: 0 auto;
+    background: 0;
+}
+
+.swiper-pagination {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 100px 0 72px;
+
+    h2 {
+        @include title-text;
+        text-align: center;
+        color: #000;
+    }
+
+    p {
+        margin-top: 37px;
+        @include normal-text;
+        font-size: calc(11px + 0.5vw);
+        text-align: left;
+
+    }
+}
+
+@import './scss-components/media';

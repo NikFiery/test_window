@@ -1,0 +1,28 @@
+            /*the small project normolize did not connect :)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
